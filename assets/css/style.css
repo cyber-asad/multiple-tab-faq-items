@@ -1,0 +1,91 @@
+/* Base CSS */
+* {margin: 0; padding: 0;}
+body {background: #6A9113;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #141517, #6A9113);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #141517, #6A9113); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: sans-serif;
+}
+min-height: 100vh;}
+h1, h2, h3, h4, h5, h6 {margin: 0 0 15px; font-weight: 400;}
+p {margin-bottom: 10px;}
+a {
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #333;
+}
+input[type="text"], input[type="email"], input[type="password"], textarea {padding: 5px; border: 1px solid #dddddd;}
+input[type="submit"] {padding: 5px 15px; border: none; background: #555555; color: #ffffff; cursor: pointer;}
+a:hover, a:focus {text-decoration: none; outline: 0;}
+img {max-width: 100%; height: auto; border: none;}
+.alignleft {float: left; margin-right: 15px;}
+.alignright {float: right; margin-left: 15px; }
+.aligncenter {display: block; margin: 0 auto 15px;}
+.fix {overflow: hidden:}
+.clearfix:before, .clearfix:after {display: table; content: "";}
+.clearfix:after {clear: both;}
+.container {display: block; margin: 50px auto; width: 1040px; box-sizing: border-box; background: #ddd; min-height: 500px; padding: 50px 30px;}
+
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+
+
+/* Faq Tab Section Styles Start */
+.faq-tab-wrapper {margin: 0 auto; text-align: center; width: 100%;}
+.faq-tab-selectors {margin-bottom: 30px;}
+.faq-tab-button {background: #fff; color: #3E642B; border: 1px solid #3E642B; padding: 5px 25px; margin: 5px; cursor: pointer; font-size: 14px;}
+.faq-tab-button.active, .faq-tab-button:hover {background: #407D2B; color: #fff;}
+
+.faq-tab-items {
+    width: 100%;
+}
+.faq-tab-item {
+    display: none;
+    margin: 0 1% 30px 1%;
+    padding: 2%;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: #f1f1f1;
+}
+.faq-tab-item.active {display: block;}
+.faq-tab-item h3 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.faq-tab-item ul {
+    margin: 0 auto 10px;
+    padding: 0;
+    list-style: none;
+}
+.faq-tab-item ul li {
+    display: inline-block;
+    font-weight: 700;
+}
+.faq-tab-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.faq-tab-item a {
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .faq-tab-item {
+        width: 48%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .faq-tab-item {
+        width: 98%;
+    }
+}
+/* Faq Tab Section Styles End */
