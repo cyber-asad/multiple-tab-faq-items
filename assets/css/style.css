@@ -1,9 +1,8 @@
 /* Base CSS */
 * {margin: 0; padding: 0;}
-body {background: #6A9113;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #141517, #6A9113);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #141517, #6A9113); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-family: sans-serif;
+body { /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: sans-serif;
+    color: #333;
 }
 min-height: 100vh;}
 h1, h2, h3, h4, h5, h6 {margin: 0 0 15px; font-weight: 400;}
@@ -25,7 +24,7 @@ img {max-width: 100%; height: auto; border: none;}
 .fix {overflow: hidden:}
 .clearfix:before, .clearfix:after {display: table; content: "";}
 .clearfix:after {clear: both;}
-.container {display: block; margin: 50px auto; width: 1040px; box-sizing: border-box; background: #ddd; min-height: 500px; padding: 50px 30px;}
+.container {display: block; margin: 50px auto; width: 1280px; box-sizing: border-box; min-height: 500px; padding: 50px 30px;}
 
 
 
@@ -37,10 +36,17 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 
 /* Faq Tab Section Styles Start */
-.faq-tab-wrapper {margin: 0 auto; text-align: center; width: 100%;}
-.faq-tab-selectors {margin-bottom: 30px;}
-.faq-tab-button {background: #fff; color: #3E642B; border: 1px solid #3E642B; padding: 5px 25px; margin: 5px; cursor: pointer; font-size: 14px;}
-.faq-tab-button.active, .faq-tab-button:hover {background: #407D2B; color: #fff;}
+#faq {background: #15417A;}
+.faq-tab-wrapper {margin: 0 auto; width: 100%;}
+.faq-tab-selectors { 
+    display: flex;
+    justify-content: space-around;text-align: center;}
+.faq-tab-button {background:rgba(255,255,255,0.2);  border: none; display: flex;
+    justify-content: center;
+    align-items: center; flex-direction: column; cursor: pointer; font-size: 20px; padding: 20px 40px;}
+.faq-tab-button.active, .faq-tab-button:hover {background: rgba(255,255,255,1); border: none;}
+.faq-tab-button i { display: block; font-size: 60px; margin-bottom: 10px;}
+.faq-tab-button span {}
 
 .faq-tab-items {
     width: 100%;
@@ -51,11 +57,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     padding: 2%;
     box-sizing: border-box;
     text-align: left;
-    background-color: #f1f1f1;
+    background-color: rgb(255,255,255);
 }
 .faq-tab-item.active {display: block;}
 .faq-tab-item h3 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.4;
     margin-bottom: 10px;
 }
