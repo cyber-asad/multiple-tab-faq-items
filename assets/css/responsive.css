@@ -16,9 +16,6 @@
     .container {
         width: 740px;
     }
-    .faq-tab-item {
-        width: 48%;
-    }
 }
 
 
@@ -27,9 +24,6 @@
 @media only screen and (max-width: 767px) {
     .container {
         width: 96%;
-    }
-    .faq-tab-item {
-        width: 100%;
     }
 }
 
