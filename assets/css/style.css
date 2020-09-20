@@ -93,6 +93,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     
 }
 @media only screen and (max-width: 767px) {
-    .faq-column {width: 100%;}
+    .faq-tab-selectors {flex-direction: column;}
+    .faq-tab-button, .faq-tab-button.active, .faq-tab-button:hover, .faq-tab-button:active, .faq-tab-button:focus {border-bottom: 1px solid #333; padding: 20px;}
+    .faq-tab-button i {display: none;}
+
+    .faq-tab-item-inner {flex-direction: column;}
+    .faq-column {width: 100%; box-sizing: border-box;}
+
 }
 /* Faq Tab Section Styles End */
