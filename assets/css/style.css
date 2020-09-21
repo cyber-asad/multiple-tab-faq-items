@@ -100,8 +100,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     width: 20px;
     height: 20px;
     color: #15417A;
+    font-family: 'Font Awesome 5 Free';
     content: '\f0fe';
-    font-family: 'fontAwesome';
     font-size: 16px;
 }
 .faq-single .faq-title.active:before {
