@@ -69,6 +69,20 @@
                 $allFaqTitles.removeClass("active");
                 $currentFaqTitle.toggleClass("active");
 
+                  
+                $allFaqContents.each(function(){
+
+                    // console.log($(this).prev().hasClass( "active" ) );
+                    // console.log($currentFaqContent);
+                    if( ! $(this).prev().hasClass( "active" ) ){
+                        $(this).slideUp(); // Slide up all contents under parent column
+                    }
+                });
+
+                $currentFaqContent.slideToggle();  // Slide down currently clicked content
+
+
+
             });
 
         });
