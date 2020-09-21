@@ -67,9 +67,11 @@
 
 
                 $allFaqTitles.removeClass("active");
-                $currentFaqTitle.toggleClass("active");
+                //$currentFaqTitle.toggleClass("active");
 
-                  
+
+                /* This is one way with active Class */
+                /*
                 $allFaqContents.each(function(){
 
                     // console.log($(this).prev().hasClass( "active" ) );
@@ -80,6 +82,18 @@
                 });
 
                 $currentFaqContent.slideToggle();  // Slide down currently clicked content
+                */
+                
+
+               /* This is another way without active Class */
+               $allFaqContents.slideUp();// Slide up all contents under parent column
+                if( $currentFaqContent.attr( "style" ) == undefined || $currentFaqContent.attr( "style" ) == 'display: none;' ){
+                    $currentFaqContent.slideDown();
+                    $currentFaqTitle.addClass("active");
+                }else{
+                    $currentFaqContent.slideUp();
+                    $currentFaqTitle.removeClass("active");
+                }
 
 
 
