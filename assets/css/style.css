@@ -29,18 +29,9 @@ img {max-width: 100%; height: auto; border: none;}
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
-.content-row.content-row-color {
-    background-color: #15417A;
-}
-.faq-section-top {
-    padding: 50px 20px 200px;
-}
-.faq-section-top h2 {
-    font-size: 32px;
-    line-height: 42px;
-    color: #fff;
-    text-align: center;
-}
+.content-row.content-row-color {background-color: #15417A; }
+.faq-section-top { padding: 50px 20px 200px; }
+.faq-section-top h2 { font-size: 32px; line-height: 42px; color: #fff; text-align: center;}
 
 
 
@@ -93,6 +84,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     cursor: pointer;
     position: relative;
 }
+.faq-single .faq-title.active, .faq-single .faq-title:hover {
+    color: #15417A;
+}
 .faq-single .faq-title:before {
     position: absolute;
     top: 0;
@@ -101,6 +95,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     height: 20px;
     color: #15417A;
     font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     content: '\f0fe';
     font-size: 16px;
 }
