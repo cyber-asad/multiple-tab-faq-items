@@ -56,16 +56,18 @@
             var $titleSelf = $(this);
 
             $titleSelf.click(function() {
-                var $currentFaqItem = $(this).closest(".faq-single");   // Currntly clicked faq item
+                var $currentFaqTitle = $(this);   // Currntly clicked faq title
+                var $currentFaqItem = $currentFaqTitle.closest(".faq-single");   // Currntly clicked faq item
                 var $currentFaqContent = $currentFaqItem.find(".faq-content");   // Content under current faq
                 
                 var $parentFaqColumn = $currentFaqItem.closest(".faq-column");  // Parent faq column
+                var $allFaqTitles = $parentFaqColumn.find(".faq-title");   // All contents under parent column
                 var $allFaqContents = $parentFaqColumn.find(".faq-content");   // All contents under parent column
 
 
-                $allFaqContents.slideUp();  // Slide up all contents under parent column
 
-                $currentFaqContent.slideToggle();  // Slide down currently clicked content
+                $allFaqTitles.removeClass("active");
+                $currentFaqTitle.toggleClass("active");
 
             });
 
