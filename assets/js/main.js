@@ -36,19 +36,12 @@
                     else {
                         $itemSelf.addClass("active");
                     }
-
                 });
-
             });
-
         });
         // Faq Tab Mechanism End
 
-
-
-
-
-        // Faq Item Expanding Mechanism Start
+        // Faq Item Accordion Mechanism Start
         var $faqTitles = $(".faq-title"); // Faq titles
 
         $faqTitles.each(function () {
@@ -59,31 +52,12 @@
                 var $currentFaqTitle = $(this);   // Currntly clicked faq title
                 var $currentFaqItem = $currentFaqTitle.closest(".faq-single");   // Currntly clicked faq item
                 var $currentFaqContent = $currentFaqItem.find(".faq-content");   // Content under current faq
-                
+
                 var $parentFaqColumn = $currentFaqItem.closest(".faq-column");  // Parent faq column
                 var $allFaqTitles = $parentFaqColumn.find(".faq-title");   // All contents under parent column
                 var $allFaqContents = $parentFaqColumn.find(".faq-content");   // All contents under parent column
 
-
-
                 $allFaqTitles.removeClass("active");
-                //$currentFaqTitle.toggleClass("active");
-
-
-                /* This is one way with active Class */
-                /*
-                $allFaqContents.each(function(){
-
-                    // console.log($(this).prev().hasClass( "active" ) );
-                    // console.log($currentFaqContent);
-                    if( ! $(this).prev().hasClass( "active" ) ){
-                        $(this).slideUp(); // Slide up all contents under parent column
-                    }
-                });
-
-                $currentFaqContent.slideToggle();  // Slide down currently clicked content
-                */
-                
 
                /* This is another way without active Class */
                $allFaqContents.slideUp();// Slide up all contents under parent column
@@ -94,14 +68,9 @@
                     $currentFaqContent.slideUp();
                     $currentFaqTitle.removeClass("active");
                 }
-
-
-
             });
-
         });
-        // Faq Item Expanding Mechanism End
-
+        // Faq Item Accordion Mechanism End
 
 
     });
