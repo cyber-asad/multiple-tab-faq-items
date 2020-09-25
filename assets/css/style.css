@@ -33,13 +33,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 
 .content-row.content-row-color {background-color: #15417A; }
-.faq-section-top { padding: 50px 0 100px; }
+.faq-section-top { padding: 50px 0 100px; overflow: hidden;}
 .faq-section-top h2 { font-size: 48px; line-height: 48px; color: #fff; text-align: center; margin-bottom: 15px;}
 
 
 
 /* Faq Tab Section Styles Start */
-.faq-section {margin-top: -64px;}
+.faq-section {margin-top: -64px; overflow: hidden;}
 .faq-tab-wrapper {margin: 0 auto; width: 100%;}
 .faq-tab-selectors {
     display: flex;
@@ -47,8 +47,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .faq-tab-button {background: #236FD1; color: #fff; border: none; display: flex;
     justify-content: center;
     align-items: center; flex-direction: row; cursor: pointer; font-size: 20px; line-height: 24px;
-    padding: 20px 10px; box-sizing: border-box; border-radius: 5px 5px 0 0; width: 24.5%;}
-    .faq-tab-button i {margin-right: 10px;}
+    padding: 20px 5px; box-sizing: border-box; border-radius: 5px 5px 0 0; width: 24.5%;}
+    .faq-tab-button i {margin-right: 8px;}
     .faq-tab-button:hover {
         background: #73A6E7;
     }
@@ -76,7 +76,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     padding: 30px 20px 20px;
 }
 
-.faq-column h3 {color: #4a5669;}
+.faq-column h3 {color: #4a5669; font-size: 20px; margin-bottom: 15px;}
 .faq-single {
     display: block;
 }
@@ -113,6 +113,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 .faq-single .faq-title.active:before {
     content: '\f146';
+    color: #4a5669;
 }
 .faq-single .faq-content {
     display: none;
@@ -125,9 +126,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 @media only screen and (max-width: 960px) {
-    .faq-section {margin-top: -180px;}
-    .faq-tab-selectors {flex-direction: column;}
-    .faq-tab-button, .faq-tab-button.active, .faq-tab-button:hover, .faq-tab-button:active, .faq-tab-button:focus {border-bottom: 1px solid #333; padding: 12px 1%; font-size: 17px; line-height: 20px; width: 100%;}
+    .faq-section-top {
+        padding: 20px 0 10px;
+    }
+    .faq-section {margin-top: 0; padding: 0 0 30px; }
+    .faq-section-top h2 {font-size: 32px; line-height: 34px;}
+    .faq-tab-selectors {flex-direction: column; margin: 0 -30px;}
+    .faq-tab-button, .faq-tab-button.active, .faq-tab-button:hover, .faq-tab-button:active, .faq-tab-button:focus {border-bottom: 1px solid #2a5c9c; padding: 10px 1%; font-size: 15px; line-height: 20px; width: 100%; border-radius: 0px;}
     .faq-tab-button i {display: none;}
 
     .faq-tab-item-inner {flex-direction: column;}
