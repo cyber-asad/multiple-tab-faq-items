@@ -3,13 +3,11 @@
 
     jQuery(document).ready(function ($) {
 
-
         // Faq Tab Mechanism Start
         var $faqTabSelectors = $(".faq-tab-button"); // FaqTab Selectors
 
         // Looping through each FaqTab selectors
         $faqTabSelectors.each(function () {
-
             var $selectorSelf = $(this);    // FaqTab current selector
             var $selectorNumber = $selectorSelf.data('faqtab');    // Current selector's data number
 
@@ -43,7 +41,6 @@
 
         // Faq Item Accordion Mechanism Start
         var $faqTitles = $(".faq-title"); // Faq titles
-
         $faqTitles.each(function () {
 
             var $titleSelf = $(this);
@@ -71,7 +68,6 @@
             });
         });
         // Faq Item Accordion Mechanism End
-
 
     });
 

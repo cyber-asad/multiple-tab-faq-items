@@ -29,115 +29,179 @@ img {max-width: 100%; height: auto; border: none;}
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
-.content-row.content-row-color {background: #15417A;}
-
-
-
-
 
 
 /* Faq Tab Area Styles Start */
-.faq-section-top { padding: 50px 0 100px; overflow: hidden;}
-.faq-section-top h2 { font-size: 48px; line-height: 48px; color: #fff; text-align: center; margin-bottom: 15px;}
-.faq-section {margin-top: -64px; overflow: hidden;}
-.faq-tab-wrapper {margin: 0 auto; width: 100%;}
+.faq-section-top {
+    background: #15417A;
+	padding: 50px 0 100px !important;
+	overflow: hidden;
+}
+.faq-section-top h2 {
+	font-size: 48px;
+	line-height: 48px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.faq-section {
+	margin-top: -64px;
+	overflow: hidden;
+}
+.faq-tab-wrapper {
+	margin: 0 auto;
+	width: 100%;
+}
 .faq-tab-selectors {
-    display: flex;
-    justify-content: space-around;text-align: center;}
-.faq-tab-button {background: #236FD1; color: #fff; border: none; display: flex;
-    justify-content: center;
-    align-items: center; flex-direction: row; cursor: pointer; font-size: 20px; line-height: 24px;
-    padding: 20px 5px; box-sizing: border-box; border-radius: 5px 5px 0 0; width: 24.5%;}
-    .faq-tab-button i {margin-right: 8px;}
-    .faq-tab-button:hover {
-        background: #73A6E7;
-    }
-.faq-tab-button.active, .faq-tab-button:active, .faq-tab-button:focus {background: #fff; color: #15417A; border: none; outline: none;}
-
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.faq-tab-button {
+	background: #236FD1;
+	color: #fff;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	cursor: pointer;
+	font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+	padding: 20px 5px;
+	box-sizing: border-box;
+	border-radius: 5px 5px 0 0;
+	width: 24.5%;
+}
+.faq-tab-button i {
+	margin-right: 8px;
+}
+.faq-tab-button:hover {
+    background: #73A6E7;
+    color: #fff;
+}
+.faq-tab-button.active,
+.faq-tab-button:active,
+.faq-tab-button:focus {
+	background: #fff;
+	color: #15417A;
+	border: none;
+	outline: none;
+}
 .faq-tab-items {
-    width: 100%;
+	width: 100%;
 }
 .faq-tab-item {
-    display: none;
-    padding: 30px 0;
-    box-sizing: border-box;
-    text-align: left;
-    background-color: rgb(255,255,255);
+	display: none;
+	padding: 30px 0;
+	box-sizing: border-box;
+	text-align: left;
+	background-color: rgb(255, 255, 255);
 }
-.faq-tab-item.active {display: block;}
-
+.faq-tab-item.active {
+	display: block;
+}
 .faq-tab-item-inner {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row wrap;}
-
-.faq-column {
-    width: 50%;
-    padding: 30px 20px 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row wrap;
 }
-
-.faq-column h3 {color: #4a5669; font-size: 20px; margin-bottom: 15px;}
+.faq-column {
+	width: 50%;
+	padding: 30px 20px 20px;
+}
+.faq-column h3 {
+	color: #4a5669;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
 .faq-single {
-    display: block;
+	display: block;
 }
 .faq-single .faq-title {
-    color: #15417A;
-    font-size: 17px;
-    line-height: 1.5;
-    margin-bottom: 0;
-    padding: 3px 10px 3px 28px;
-    cursor: pointer;
-    position: relative;
-    border-radius: 4px;
+	color: #15417A;
+	font-size: 17px;
+	line-height: 1.5;
+	margin-bottom: 0;
+	padding: 3px 10px 3px 28px;
+	cursor: pointer;
+	position: relative;
+	border-radius: 4px;
 }
 .faq-single .faq-title:hover {
-    background: #f0f2f5;
+	background: #f0f2f5;
 }
 .faq-single .faq-title.active {
-    color: #4a5669;
+	color: #4a5669;
 }
 .faq-single .faq-title.active:hover {
-    background: none;
+	background: none;
 }
 .faq-single .faq-title:before {
-    position: absolute;
-    top: 3px;
-    left: 8px;
-    width: 20px;
-    height: 20px;
-    color: #15417A;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    content: '\f0fe';
-    font-size: 16px;
+	position: absolute;
+	top: 3px;
+	left: 8px;
+	width: 20px;
+	height: 20px;
+	color: #15417A;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f0fe';
+	font-size: 16px;
 }
 .faq-single .faq-title.active:before {
-    content: '\f146';
-    color: #4a5669;
+	content: '\f146';
+	color: #4a5669;
 }
 .faq-single .faq-content {
-    display: none;
-    font-size: 15px;
-    line-height: 1.5;
-    margin: 5px 5px 10px 8px;
+	display: none;
+	font-size: 15px;
+	line-height: 1.5;
+	margin: 5px 5px 10px 8px;
 }
 .faq-single.active .faq-content {
-    display: block;
+	display: block;
 }
 
-/* Responsive Faq Area Styles */
+/* Faq Area Responsive Styles */
 @media only screen and (max-width: 960px) {
-    .faq-section-top {
-        padding: 20px 0 10px;
-    }
-    .faq-section {margin-top: 0; padding: 0 0 30px; }
-    .faq-section-top h2 {font-size: 32px; line-height: 34px;}
-    .faq-tab-selectors {flex-direction: column; margin: 0 -30px;}
-    .faq-tab-button, .faq-tab-button.active, .faq-tab-button:hover, .faq-tab-button:active, .faq-tab-button:focus {border-bottom: 1px solid #2a5c9c; padding: 10px 1%; font-size: 15px; line-height: 20px; width: 100%; border-radius: 0px;}
-    .faq-tab-button i {display: none;}
-
-    .faq-tab-item-inner {flex-direction: column;}
-    .faq-column {width: 100%; box-sizing: border-box;}
-
+	.faq-section-top {
+		padding: 20px 0 10px !important;
+	}
+	.faq-section {
+		margin-top: 0;
+		padding: 0 0 30px;
+	}
+	.faq-section-top h2 {
+		font-size: 32px;
+		line-height: 34px;
+	}
+	.faq-tab-selectors {
+		flex-direction: column;
+		margin: 0 -30px;
+	}
+	.faq-tab-button,
+	.faq-tab-button.active,
+	.faq-tab-button:hover,
+	.faq-tab-button:active,
+	.faq-tab-button:focus {
+		border-bottom: 1px solid #2a5c9c;
+		padding: 10px 1%;
+		font-size: 15px;
+		line-height: 20px;
+		width: 100%;
+		border-radius: 0px;
+	}
+	.faq-tab-button i {
+		display: none;
+	}
+	.faq-tab-item-inner {
+		flex-direction: column;
+	}
+	.faq-column {
+		width: 100%;
+		box-sizing: border-box;
+	}
 }
 /* Faq Tab Area Styles End */
